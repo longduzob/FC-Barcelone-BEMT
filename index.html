@@ -1,232 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Page FC Barcelone</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Trebuchet MS', sans-serif;
-      background: linear-gradient(to right, #001933, #3B0033);
-      color: #f5f5f5;
-      text-align: center;
-      line-height: 1.6;
-    }
-
-    h1, h2 {
-      color: #d79a10;
-      text-shadow: 1px 1px 4px black;
-    }
-
-    h1 {
-      font-size: 50px;
-      margin-top: 20px;
-    }
-
-    h2 {
-      font-size: 30px;
-      margin-top: 40px;
-    }
-
-    p, li {
-      font-size: 18px;
-    }
-
-    a {
-      color: #FFD700;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header img {
-      width: 100px;
-    }
-
-    .maillots, .partenaires, .joueurs {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin-top: 30px;
-    }
-
-    .bloc {
-      background-color: rgba(0, 0, 0, 0.4);
-      border: 1px solid #FFD700;
-      border-radius: 12px;
-      padding: 20px;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
-    }
-
-    .bloc:hover {
-      transform: scale(1.05);
-    }
-
-    .bloc img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    footer {
-      margin-top: 60px;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px;
-      font-size: 16px;
-    }
-
-    footer a {
-      color: #FFD700;
-    }
-
-    footer p {
-      margin: 5px 0;
-    }
-
-    .intro {
-      max-width: 900px;
-      margin: 20px auto;
-      background: rgba(0,0,0,0.3);
-      padding: 25px;
-      border-radius: 12px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>FC Barcelone</title>
 </head>
 
-<body>
-  <header>
-    <img src="logo_barcelone.jpg" alt="logo" style="float:left;">
-    <img src="logo_barcelone.jpg" alt="logo" style="float:right;">
-    <h1>FC BARCELONE</h1>
-    <p>Bienvenue sur la page officielle du FC Barcelone</p>
+<body style="margin:0; font-family:Arial, sans-serif; background:linear-gradient(135deg,#004D98,#A50044); color:white; text-align:center; line-height:1.6;">
+
+  <header style="padding:40px 20px; position:relative;">
+    <img src="logo_barcelone.jpg" alt="logo" style="width:100px; position:absolute; top:20px; left:20px;">
+    <img src="logo_barcelone.jpg" alt="logo" style="width:100px; position:absolute; top:20px; right:20px;">
+    <h1 style="color:#E2B900; font-size:55px; margin:0;">FC BARCELONE</h1>
+    <p style="font-size:20px;">Bienvenue sur la page officielle du FC Barcelone</p>
   </header>
 
-  <section class="maillots">
-    <div class="bloc">
-      <img src="1maillot_fc_barcelone.jpg" alt="maillot domicile">
-      <p><strong>Maillot domicile</strong></p>
+  <section style="background-color:rgba(0,0,0,0.3); border-radius:10px; width:90%; max-width:1000px; margin:30px auto; padding:20px;">
+    <h2 style="color:white;">Maillots</h2>
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:30px;">
+      <div>
+        <img src="1maillot_fc_barcelone.jpg" alt="Maillot domicile" style="width:200px; border-radius:10px;">
+        <p>Maillot domicile</p>
+      </div>
+      <div>
+        <img src="2maillot_fc_barcelone.jpg" alt="Maillot extérieur" style="width:200px; border-radius:10px;">
+        <p>Maillot extérieur</p>
+      </div>
+      <div>
+        <img src="3maillot_fc_barcelone.jpg" alt="Troisième maillot" style="width:200px; border-radius:10px;">
+        <p>Troisième maillot</p>
+      </div>
     </div>
-    <div class="bloc">
-      <img src="2maillot_fc_barcelone.jpg" alt="maillot extérieur">
-      <p><strong>Maillot extérieur</strong></p>
+    <p><a href="https://store.fcbarcelona.com/fr/collections/kits" target="_blank" style="color:white;">Boutique officielle</a></p>
+  </section>
+
+  <section style="background-color:rgba(0,0,0,0.3); border-radius:10px; width:90%; max-width:1000px; margin:30px auto; padding:20px;">
+    <h2>Présentation du club</h2>
+    <p>Depuis 1899, le FC Barcelone est bien plus qu’un club : il représente la passion, l’excellence et des valeurs comme le respect et l’esprit d’équipe. Des légendes comme Cruyff, Xavi, Iniesta ou Messi ont marqué l’histoire du club et du football mondial.</p>
+    <p>La Masia, centre de formation du club, forme les talents de demain et transmet des valeurs fortes de discipline et de fair-play.</p>
+    <p><strong>Més que un club</strong> : plus qu’un club, une fierté.</p>
+  </section>
+
+  <section style="background-color:rgba(0,0,0,0.3); border-radius:10px; width:90%; max-width:1000px; margin:30px auto; padding:20px;">
+    <h2>Palmarès</h2>
+    <ul style="list-style:none; padding:0; text-align:left; display:inline-block;">
+      <li>27 Championnats d'Espagne</li>
+      <li>31 Coupes d'Espagne</li>
+      <li>5 Ligues des Champions</li>
+      <li>3 Coupes du Monde des Clubs</li>
+      <li>4 Coupes des Coupes Européennes</li>
+      <li>14 Supercoupes d'Espagne</li>
+      <li>5 Supercoupes d’Europe</li>
+    </ul>
+    <p><a href="https://www.fcbarcelona.fr/fr/club/histoire/le-club-depuis-1899" target="_blank" style="color:white;">En savoir plus sur l’histoire</a></p>
+  </section>
+
+  <section style="background-color:rgba(0,0,0,0.3); border-radius:10px; width:90%; max-width:1000px; margin:30px auto; padding:20px;">
+    <h2>Effectif actuel</h2>
+
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px; text-align:left;">
+      <div>
+        <h3>Défenseurs</h3>
+        <ul style="list-style:none; padding:0;">
+          <li>Pau Cubarsí</li>
+          <li>Alejandro Balde</li>
+          <li>Ronald Araujo</li>
+          <li>Andreas Christensen</li>
+          <li>Jules Koundé</li>
+          <li>Eric García</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Milieux</h3>
+        <ul style="list-style:none; padding:0;">
+          <li>Gavi</li>
+          <li>Pedri</li>
+          <li>Fermín López</li>
+          <li>Frenkie de Jong</li>
+          <li>Dani Olmo</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Attaquants</h3>
+        <ul style="list-style:none; padding:0;">
+          <li>Ferran Torres</li>
+          <li>Robert Lewandowski</li>
+          <li>Lamine Yamal</li>
+          <li>Raphinha</li>
+        </ul>
+      </div>
     </div>
-    <div class="bloc">
-      <img src="3maillot_fc_barcelone.jpg" alt="troisième maillot">
-      <p><strong>Troisième maillot</strong></p>
+
+    <h3>Gardiens</h3>
+    <ul style="list-style:none; padding:0;">
+      <li>Marc-André ter Stegen</li>
+      <li>Wojciech Szczęsny</li>
+      <li>Joan Garcia</li>
+    </ul>
+
+    <h3>Entraîneur</h3>
+    <p>Hansi Flick</p>
+  </section>
+
+  <section style="background-color:rgba(0,0,0,0.3); border-radius:10px; width:90%; max-width:1000px; margin:30px auto; padding:20px;">
+    <h2>Partenaires</h2>
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px;">
+      <div>
+        <img src="Logo_nike.jpg" alt="Nike" style="width:100px;">
+        <p>Nike</p>
+      </div>
+      <div>
+        <img src="logo_spotify.jpg" alt="Spotify" style="width:100px;">
+        <p>Spotify</p>
+      </div>
+      <div>
+        <img src="logo_philips.jpg" alt="Philips" style="width:100px;">
+        <p>Philips Ambilight TV</p>
+      </div>
     </div>
   </section>
 
-  <p><a href="https://store.fcbarcelona.com/fr/collections/kits" target="_blank">Accéder à la boutique officielle du FC Barcelone</a></p>
-
-  <div class="intro">
-    <p>Depuis 1899, le FC Barcelone est bien plus qu’un club : il incarne la passion, l’excellence et des valeurs fortes comme le respect, l’humilité et l’esprit d’équipe. Porté par des légendes comme Cruyff, Xavi, Iniesta ou Messi, le Barça a marqué l’histoire du football mondial.</p>
-    <p>Notre académie, <strong>La Masia</strong>, forme les talents de demain, en leur transmettant savoir-faire, discipline et fair-play, faisant du club un véritable tremplin pour les générations futures.</p>
-    <p><strong>FC Barcelone – Més que un club, une légende vivante.</strong></p>
-  </div>
-
-  <h2>Histoire du club</h2>
-  <ul>
-    <li>27 Championnats d'Espagne (La Liga)</li>
-    <li>31 Coupes d'Espagne (Copa del Rey)</li>
-    <li>5 Ligues des Champions (UEFA Champions League)</li>
-    <li>3 Coupes du Monde des Clubs FIFA</li>
-    <li>4 Coupes des Coupes Européennes</li>
-    <li>14 Supercoupes d'Espagne</li>
-    <li>5 Supercoupes d’Europe</li>
-  </ul>
-
-  <p><a href="https://www.fcbarcelona.fr/fr/club/histoire/le-club-depuis-1899" target="_blank">Découvrir l’histoire complète du FC Barcelone</a></p>
-
-  <h2>Joueurs du FC Barcelone</h2>
-
-  <div class="joueurs">
-    <div class="bloc">
-      <h3>Défenseurs</h3>
-      <ul>
-        <li>Pau Cubarsí</li>
-        <li>Alejandro Balde</li>
-        <li>Ronald Araujo</li>
-        <li>Andreas Christensen</li>
-        <li>Gerard Martín</li>
-        <li>Jules Kounde</li>
-        <li>Eric García</li>
-      </ul>
-    </div>
-    <div class="bloc">
-      <h3>Milieux</h3>
-      <ul>
-        <li>Gavi</li>
-        <li>Pedri</li>
-        <li>Fermín López</li>
-        <li>Marc Casadó</li>
-        <li>Frenkie de Jong</li>
-        <li>Dani Olmo</li>
-        <li>Marc Bernal</li>
-      </ul>
-    </div>
-    <div class="bloc">
-      <h3>Attaquants</h3>
-      <ul>
-        <li>Ferran Torres</li>
-        <li>Robert Lewandowski</li>
-        <li>Lamine Yamal</li>
-        <li>Raphinha</li>
-        <li>Marcus Rashford</li>
-        <li>Roony Bardghji</li>
-      </ul>
-    </div>
-  </div>
-
-  <h2>Gardiens</h2>
-  <ul>
-    <li>Marc-André ter Stegen</li>
-    <li>Wojciech Szczęsny</li>
-    <li>Joan Garcia</li>
-  </ul>
-
-  <h2>Coach</h2>
-  <p><strong>Hansi Flick</strong></p>
-
-  <h2>Partenaires</h2>
-  <div class="partenaires">
-    <div class="bloc">
-      <img src="Logo_nike.jpg" alt="Nike">
-      <p>Nike</p>
-    </div>
-    <div class="bloc">
-      <img src="logo_spotify.jpg" alt="Spotify">
-      <p>Spotify</p>
-    </div>
-    <div class="bloc">
-      <img src="logo_philips.jpg" alt="Philips">
-      <p>Philips Ambilight TV</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 - FC Barcelone | <a href="https://www.fcbarcelona.fr" target="_blank">Site officiel</a></p>
+  <footer style="background-color:rgba(0,0,0,0.5); padding:20px; margin-top:40px; font-size:16px;">
+    <p>© 2025 - FC Barcelone | <a href="https://www.fcbarcelona.fr" target="_blank" style="color:white;">Site officiel</a></p>
     <p>
-      <a href="https://www.instagram.com/fcbarcelona/" target="_blank">Instagram</a> |
-      <a href="https://twitter.com/FCBarcelona" target="_blank">X (Twitter)</a> |
-      <a href="https://www.facebook.com/fcbarcelona/" target="_blank">Facebook</a> |
-      <a href="https://www.youtube.com/user/fcbarcelona" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/fcbarcelona/" target="_blank" style="color:white;">Instagram</a> |
+      <a href="https://twitter.com/FCBarcelona" target="_blank" style="color:white;">X</a> |
+      <a href="https://www.facebook.com/fcbarcelona/" target="_blank" style="color:white;">Facebook</a> |
+      <a href="https://www.youtube.com/user/fcbarcelona" target="_blank" style="color:white;">YouTube</a>
     </p>
-    <p>Benjamin – Martin – Enes – Timéo</p>
+    <p>Benjamin - Martin - Enes - Timéo</p>
   </footer>
 
   <script>
     alert("Bienvenue sur la page du FC Barcelone !");
   </script>
+
 </body>
 </html>
