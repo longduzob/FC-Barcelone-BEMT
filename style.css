@@ -1,163 +1,131 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Version responsive (en pourcentages)</title>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-  <style>
-    /* === Style global === */
-    body {
-      margin: 0;
-      font-family: "Nunito", sans-serif;
-      background: linear-gradient(120deg, #004D98 10%, #A50044 45%, #B90030 90%);
-      color: #f2f2f2;
-      text-align: center;
-      line-height: 1.6;
-    }
+        body {
+        margin: 0;
+        font-family: "Nunito", sans-serif;
+        background: linear-gradient(120deg, #004D98 10%, #A50044 45%, #B90030 90%);
+        color: #f2f2f2;
+        text-align: center;
+        line-height: 1.6;
+        }
 
-    h1, h2, h3 {
-      color: #FFD700;
-      text-shadow: 0.1vw 0.1vw 0.4vw black;
-      margin-bottom: 1.5%;
-    }
+        h1, h2, h3 {
+        color: #FFD700;
+        text-shadow: 1px 1px 4px black;
+        margin-bottom: 15px;
+        }
 
-    a {
-      color: #E2B900;
-      text-decoration: none;
-    }
+        a {
+        color: #E2B900;
+        text-decoration: none;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        a:hover {
+        text-decoration: underline;
+        }
 
-    header {
-      padding: 4% 2%; /* 40px → 4%, 20px → 2% */
-      position: relative;
-    }
+        header {
+        padding: 40px 20px;
+        position: relative;
+        }
 
-    header img {
-      width: 8%; /* 100px sur 1200px ≈ 8% */
-      position: absolute;
-      top: 3%; /* 20px ≈ 3% de la hauteur du header */
-      left: 2%;
-    }
+        header img {
+        width: 100px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        }
 
-    header h1 {
-      font-size: 4vw; /* 56px devient 4% de la largeur de la fenêtre */
-      margin: 0;
-    }
+        header h1 {
+        font-size: 56px;
+        margin: 0;
+        }
 
-    header p {
-      font-size: 1.5vw; /* 20px → environ 1.5% de la largeur */
-      opacity: 0.9;
-    }
+        header p {
+        font-size: 20px;
+        opacity: 0.9;
+        }
 
-    section {
-      max-width: 80%; /* 1000px sur un écran 1250px → ≈ 80% */
-      margin: 4% auto;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 1vw; /* 12px → environ 1vw */
-      padding: 3%;
-      box-shadow: 0 0 2vw rgba(0,0,0,0.4);
-    }
+        section {
+	max-width: 1000px;
+        margin: 40px auto;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
 
-    .grille {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 3%;
-      margin-top: 2%;
-    }
+	.grille {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+        }
 
-    .bloc {
-      background-color: rgba(0,0,0,0.4);
-      border: 0.1vw solid #FFD700;
-      border-radius: 1vw;
-      padding: 2%;
-      width: 25%; /* 260px sur environ 1000px → ≈ 25% */
-      transition: transform 0.3s ease;
-    }
+        .bloc {
+        background-color: rgba(0,0,0,0.4);
+        border: 1px solid #FFD700;
+        border-radius: 12px;
+        padding: 20px;
+        width: 260px;
+        transition: transform 0.3s ease;
+        }
 
-    .bloc:hover {
-      transform: scale(1.05);
-    }
+        .bloc:hover {
+        transform: scale(1.05);
+        }
 
-    .bloc img {
-      width: 100%;
-      border-radius: 0.8vw;
-    }
+        .bloc img {
+        width: 100%;
+        border-radius: 10px;
+	}
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+        ul {
+        list-style: none;
+        padding: 0;
+	}
 
-    li {
-      margin: 0.6% 0;
-    }
+        li {
+        margin: 6px 0;
+        }
 
-    footer {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 2%;
-      font-size: 1.3vw;
-      margin-top: 5%;
-    }
+        footer {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 25px;
+        font-size: 16px;
+        margin-top: 50px;
+        }
 
-    footer a {
-      color: #FFD700;
-    }
+        footer a {
+        color: #FFD700;
+        }
 
-    footer p {
-      margin: 0.5% 0;
-    }
+        footer p {
+        margin: 6px 0;
+        }
+        .bande {
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 9999;
+        background: transparent;
+        }
 
-    /* Bonus : petit ajustement responsive */
-    @media (max-width: 700px) {
-      header img {
-        width: 15%;
-      }
-      header h1 {
-        font-size: 6vw;
-      }
-      .bloc {
-        width: 80%;
-      }
-    }
-  </style>
-</head>
+        .bande span {
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 16px;
+        color: #FFD700;
+        text-shadow: 1px 1px 2px black;
+        animation: defile 70s linear infinite;
+        opacity: 0.9;
+        }
 
-<body>
-  <header>
-    <img src="logo.png" alt="Logo">
-    <h1>Bienvenue sur mon site</h1>
-    <p>Version avec pourcentages et unités relatives</p>
-  </header>
+        @keyframes defile {
+        0%   { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
 
-  <section>
-    <h2>Galerie de contenu</h2>
-    <div class="grille">
-      <div class="bloc">
-        <img src="image1.jpg" alt="Image 1">
-        <h3>Titre du bloc 1</h3>
-        <ul>
-          <li>Détail n°1</li>
-          <li>Détail n°2</li>
-        </ul>
-      </div>
-      <div class="bloc">
-        <img src="image2.jpg" alt="Image 2">
-        <h3>Titre du bloc 2</h3>
-        <ul>
-          <li>Détail n°1</li>
-          <li>Détail n°2</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-
-  </footer>
-</body>
-</html>
